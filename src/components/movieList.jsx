@@ -78,7 +78,7 @@ class MovieList extends Component {
     render() { 
         const {length: count} = this.state.movies;
         const {pageSize, currentPage, movies:allMovies} = this.state;
-        const movies = paginate(allMovies, pageSize,  currentPage)
+        const movies = paginate(allMovies, currentPage, pageSize  )
         return (
             <div className="container">
                 <div>Total Movies:{count}</div>
@@ -130,6 +130,7 @@ class MovieList extends Component {
                     onPageChanges={this.handlePageChange}
 
                 />
+                
             </div>
         );
     }
