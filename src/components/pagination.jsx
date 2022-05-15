@@ -8,12 +8,13 @@ const Pagination = (props) => {
     //console.log('pageCount', pageCount)
     return ( 
         <ul className="pagination">
+            <li  ><button disabled={currentPage == 1} onClick={()=>onPageChanges(currentPage-1)}>previous</button></li>
             {pages.map(page=>
                  <li key={page} className={ page === currentPage ? 'page-item active' : 'page-item' }>
                     <a className="page-link" onClick={()=>onPageChanges(page)}>{page}</a>
                 </li>
             )}
-          
+          <li ><button disabled={currentPage == pageCount} onClick={()=>onPageChanges(currentPage+1)}>Next</button></li>
         </ul>
         );
 }
