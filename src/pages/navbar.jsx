@@ -6,7 +6,7 @@ class Navbar extends Component {
         return (
             <div className="pt-5">
                 <div className="container">
-                    <div class="menu-nav">   
+                    <div className="menu-nav">   
                         <ul className="d-flex list-unstyled mb-0"> 
                             <li className="me-2"><NavLink to="/">Home</NavLink></li>
                             <li className="me-2"><NavLink to="/login">Login</NavLink></li>
