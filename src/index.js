@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MovieList />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
